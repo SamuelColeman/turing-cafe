@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Form from '../Form/Form';
+import Reservations from '../Reservations/Reservations';
 import { getReservations } from '../apiCalls/apiCalls'
 
 export default class App extends Component {
@@ -20,10 +21,12 @@ export default class App extends Component {
   }
 
   render() {
+    const { reservations, isLoading, error } = this.state;
     return (
       <main>
         <h1>Turing Cafe</h1>
         <Form />
+        <Reservations reservations={reservations} />
       </main>
     )
   }

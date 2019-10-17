@@ -13,6 +13,29 @@ export default class Form extends Component {
 
 	render() {
 		return (
+			<form>
+				<input
+					type='text'
+					placeholder='Name'
+					value={this.state.name || ''}
+				/>
+				<input
+					type='text'
+					placeholder='Name'
+					value={this.state.date || ''}
+					/>
+				<input
+					type='text'
+					placeholder='Name'
+					value={this.state.time || ''}
+				/>
+				<input
+					type='text'
+					placeholder='Name'
+					value={this.state.guests}
+				/>
+				<button>Make Reservation</button>
+			</form>
 		)
 	}
 }
