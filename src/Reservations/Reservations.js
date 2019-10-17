@@ -3,7 +3,6 @@ import Card from '../Card/Card';
 
 const Reservations = ({ reservations }) => {
 	const filteredReservations = reservations.map(reservation => {
-		console.log(reservation.id)
 		return <Card 
 			key={reservation.id}
 			id={reservation.id}
