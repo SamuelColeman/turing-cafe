@@ -3,3 +3,8 @@ export const getReservations = () => {
 		.then(response => response.json())
 		.then(data => data)
 }
+
+export const postReservation = (options) => {
+	return fetch('http://localhost:3001/api/v1/reservations', options)
+		.then(response => response.json())
+}
